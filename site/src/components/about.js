@@ -74,7 +74,7 @@ class About extends React.Component{
                 <StyledContainer>
                 <div className = "aboutme">
                     <div className = "aboutme-image">
-                        <img src = "https://amiradediran.netlify.com/resources/media/7a8ac0be-87df-4375-9ba6-3361f3f0cd7b%202.JPG" alt = "picture"/>
+                        <img src = "https://amiradediran.netlify.com/resources/media/7a8ac0be-87df-4375-9ba6-3361f3f0cd7b%202.JPG" alt = "author"/>
                     </div>
                     <div className = "aboutme-text">
                         <p>Hi, My name is Amira Adediran. I am a full stack developer. </p>
