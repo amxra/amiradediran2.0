@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-class Nav extends React.Component{
+class Navigation extends React.Component{
     render(){
         return(
             <div className = 'about-component'>
@@ -11,4 +11,4 @@ class Nav extends React.Component{
     }
 }
 
-export default Nav;
+export default Navigation;
