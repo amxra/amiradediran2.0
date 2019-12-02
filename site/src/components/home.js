@@ -30,7 +30,7 @@ const Container = styled.div`
         padding: 1rem;
         color: white;
         text-decoration: none;
-        font-size: 24px;
+        font-size: 18px;
       }
       a:hover{
         color: #FF6961;
