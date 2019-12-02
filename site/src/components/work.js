@@ -28,6 +28,11 @@ const StyledContainer = styled.div`
         .box{
             border: 1px solid black;
             padding: 1rem;
+
+            p{
+                font-size: 10px;
+            }
+
             img{
                 width: 70%;
                 height: 60%;
