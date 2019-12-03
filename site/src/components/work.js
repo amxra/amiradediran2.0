@@ -6,6 +6,7 @@ import amiradediran from './assets/amiradediran.png'
 import restaurantpassport from './assets/restaurantpassport.png'
 import chefdiaries from './assets/chefdiaries.png'
 import howto from './assets/how-to.png'
+import rickandmorty from './assets/rickandmorty.png'
 
 
 
@@ -90,6 +91,15 @@ class Work extends React.Component{
                         </ul>
                      </div>
                      <div className = "box four">
+                        <a target = 'blank'href = "https://sprint-rickandmorty.netlify.com/"><img src ={rickandmorty} alt = 'site'/></a>
+                         <p>This is a web application i designed and built using the rick and morty API</p>
+                         <ul className = "stack">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>React</li>
+                        </ul>
+                     </div>
+                     <div className = "box five">
                          <a target = 'blank'href = "https://how-to-dls5aefb1.now.sh/"><img src ={howto} alt = 'site'/></a>
                          <p>This is a web application built with a team. I was a part of the frontend team that brought this to live! I also designed this.</p>
                          <ul className = "stack">
@@ -98,7 +108,7 @@ class Work extends React.Component{
                             <li>React</li>
                         </ul>
                      </div>
-                     <div className = "box five">
+                     <div className = "box six">
                         <a target = 'blank'href = "https://amxra.github.io/amiradediran/"><img src ={amiradediran} alt = 'site'/></a>
                          <p>This is the first version of my personal website.</p>
                          <ul className = "stack">
@@ -106,7 +116,6 @@ class Work extends React.Component{
                             <li>CSS</li>
                         </ul>
                      </div>
-                     <div className = "box six"></div>
                      <div className = "box seven"></div>
                      <div className = "box eight"></div>
                      <div className = "box nine"></div>
