@@ -28,9 +28,19 @@ const StyledContainer = styled.div`
         .box{
             border: 1px solid black;
             padding: 1rem;
+            
+            
 
             p{
                 font-size: 10px;
+            }
+
+            ul li{
+                font-size: 8px;
+                display: inline;
+                border: 1px solid #FF6961;
+                margin: 0 0.5rem;
+                padding: 0 0.5rem;
             }
 
             img{
@@ -54,28 +64,52 @@ class Work extends React.Component{
                  <div className = "work">
                      <div className = "box one">
                          <a target = 'blank'href = "https://amiradediran.com"><img src ={amiradediran2} alt = 'site'/></a>
-                         <p>This is the current version of my website built with React and jQuery</p>
+                         <p>This is the current version of my website</p>
+                         <ul className = "stack">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>jQuery</li>
+                            <li>React</li>
+                        </ul>
                      </div>
                      <div className = "box two">
                         <a target = 'blank'href = "https://therestaurantpassport.netlify.com"><img src ={restaurantpassport} alt = 'site'/></a>
-                        <p>This is a multipage UI assigment designed and built by me using pure HTML and CSS</p>
+                        <p>This is a multipage UI assigment designed </p>
+                        <ul className = "stack">
+                            <li>HTML</li>
+                            <li>CSS/LESS</li>
+                        </ul>
                      </div>
                      <div className = "box three">
                         <a target = 'blank'href = "https://front-end-dnn10lqgm.now.sh/login"><img src ={chefdiaries} alt = 'site'/></a>
-                        <p>This is a web application built with a team. I was a part of the frontend team that brought this to live! This was built using React</p>
+                        <p>This is a web application built with a team. I was a part of the frontend team that brought this to live! I also deisgned this.</p>
+                        <ul className = "stack">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>React</li>
+                        </ul>
                      </div>
                      <div className = "box four">
                          <a target = 'blank'href = "https://how-to-dls5aefb1.now.sh/"><img src ={howto} alt = 'site'/></a>
-                         <p>This is a web application built with a team. I was a part of the frontend team that brought this to live! This was built using react</p>
+                         <p>This is a web application built with a team. I was a part of the frontend team that brought this to live! I also designed this.</p>
+                         <ul className = "stack">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>React</li>
+                        </ul>
                      </div>
                      <div className = "box five">
                         <a target = 'blank'href = "https://amxra.github.io/amiradediran/"><img src ={amiradediran} alt = 'site'/></a>
-                         <p>This is the first version of my personal website. It was built using pure HTML and CSS.</p>
+                         <p>This is the first version of my personal website.</p>
+                         <ul className = "stack">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
                      </div>
-                     <div className = "box six">coming ...</div>
-                     <div className = "box seven">coming ...</div>
-                     <div className = "box eight">coming ...</div>
-                     <div className = "box nine">coming ...</div>
+                     <div className = "box six"></div>
+                     <div className = "box seven"></div>
+                     <div className = "box eight"></div>
+                     <div className = "box nine"></div>
                  </div>
                  </StyledContainer>
             </div>
