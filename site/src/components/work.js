@@ -61,7 +61,7 @@ const StyledContainer = styled.div`
             .box-stack{
                 
                 ul{
-                    margin:0;
+                    margin: 0;
                 }
             }
         }

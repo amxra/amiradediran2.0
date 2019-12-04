@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import Navigation from './nav';
 
 const Container = styled.div`
+
+  
     box-sizing: border-box;
     width:100%;
     height: 100vh;
@@ -20,22 +22,13 @@ const Container = styled.div`
       letter-spacing: 1rem;
     }
 
-    .nav{
-      box-sizing: border-box;
-      width: 100%;
-      padding: 1.5rem;
-      text-align: right;
+    @media screen and (max-width: 768px) {
+      .sitename{
+          display: none;
+      }
+  }
 
-      a{
-        padding: 1rem;
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
-      }
-      a:hover{
-        color: #FF6961;
-      }
-    }
+    
 `
 
 
