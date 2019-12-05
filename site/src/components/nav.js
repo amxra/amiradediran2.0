@@ -39,6 +39,7 @@ function Navigation(){
                 <Link to = "/about">About</Link>
                 <Link to = "/work">Work</Link>
                 <Link to = "/contact">Contact</Link>
+                <Link to = "/hamburger">Ham</Link>
             </div>
         </StyleNav>
     )
