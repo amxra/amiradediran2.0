@@ -63,14 +63,26 @@ const StyledContainer = styled.div`
    }
 }
 `
+// const HideNav = styled.div`
 
+// @media only screen and (max-width: 768px){
+//     .largenav{
+//         display:none;
+//     }
+// }
+
+// `
 
 class About extends React.Component{
     render(){
         return(
             
             <div className = "about-container">
-                <NavTwo/>
+                
+                    <div className = 'largenav'>
+                        <NavTwo/>
+                    </div>
+                
                 <StyledContainer>
                 <div className = "aboutme">
                     <div className = "aboutme-image">
