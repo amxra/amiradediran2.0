@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import NavTwo from './nav2'
+import NavTwo from './nav2';
+import MobileNav from './mobilenav';
 
 
 
@@ -63,25 +64,35 @@ const StyledContainer = styled.div`
    }
 }
 `
-// const HideNav = styled.div`
+const HideNav = styled.div`
 
-// @media only screen and (max-width: 768px){
-//     .largenav{
-//         display:none;
-//     }
-// }
+@media only screen and (max-width: 768px){
+    .largenav{
+        display: none;
+    }
+}
 
-// `
+@media only screen and (min-width: 767px){
+    .smallnav{
+        display: none;
+    }
+}
+
+`
 
 class About extends React.Component{
     render(){
         return(
             
             <div className = "about-container">
-                
+                <HideNav>
                     <div className = 'largenav'>
                         <NavTwo/>
                     </div>
+                    <div className = 'smallnav'>
+                        <MobileNav/>
+                    </div>
+                </HideNav>
                 
                 <StyledContainer>
                 <div className = "aboutme">
