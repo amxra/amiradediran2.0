@@ -1,6 +1,7 @@
 import React from "react";
 import NavTwo from './nav2';
 import styled from 'styled-components';
+import MobileNav from './mobilenav';
 import amiradediran2 from './assets/amiradediran2.png'
 import amiradediran from './assets/amiradediran.png'
 import restaurantpassport from './assets/restaurantpassport.png'
@@ -10,21 +11,35 @@ import rickandmorty from './assets/rickandmorty.png'
 
 
 
+
 const StyledContainer = styled.div`
     box-sizing: border-box;
-    height: 85vh;
+    height: 100%;
     display: flex;
     align-items: center;
+    border: 1px solid blue;
+    margin-top: 2.5rem;
+
+    @media only screen and (max-width: 800px){
+        margin-top: 7.3rem;
+    }
 
     .work{
         width: 80vw;
-        height: auto;
+        height: 100%;
         margin: 0 auto;
         display: grid;
         grid-template-columns: 30% 30% 30%;
         grid-template-rows: 30% 30% 30%;
         grid-column-gap: 10px;
         grid-row-gap: 10px;
+        border: 1px solid red;
+
+        @media only screen and (max-width: 800px){
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(9, 1fr);
+            margin-top: 5rem;
+        }
 
         .box{
             box-sizing: border-box;
@@ -34,6 +49,8 @@ const StyledContainer = styled.div`
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
+            
        
 
             p{
@@ -70,13 +87,36 @@ const StyledContainer = styled.div`
     }
 `
 
+const HideNav = styled.div`
+    @media only screen and (max-width:800px){
+        .largenav{
+            display: none;
+        }
+    }
+
+    @media only screen and (min-width:799px){
+        .smallnav{
+            display: none;
+        }
+    }
+`
+
 
 class Work extends React.Component{
     render(){
         return(
            
             <div className = "work-container">
-                <NavTwo/>
+                <header>
+                    <HideNav>
+                        <div className = 'largenav'>
+                            <NavTwo/>
+                        </div>
+                        <div className = 'smallnav'>
+                            <MobileNav/>
+                        </div>
+                    </HideNav>
+                </header>
                 <StyledContainer>
                  <div className = "work">
                      <div className = "box one">

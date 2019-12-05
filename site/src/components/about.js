@@ -22,6 +22,8 @@ const PageStyle = styled.div`
         flex-direction: row-reverse;
         align-items: center;
         height: 80vh;
+        width: 80vw;
+        margin: 0 auto;
         
         .aboutme-image{
             width: 40%;
