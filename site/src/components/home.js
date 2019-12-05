@@ -20,22 +20,6 @@ const Container = styled.div`
       letter-spacing: 1rem;
     }
 
-    .nav{
-      box-sizing: border-box;
-      width: 100%;
-      padding: 1.5rem;
-      text-align: right;
-
-      a{
-        padding: 1rem;
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
-      }
-      a:hover{
-        color: #FF6961;
-      }
-    }
 `
 
 
