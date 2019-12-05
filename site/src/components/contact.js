@@ -100,7 +100,7 @@ function Contact() {
         <StyledContainer>
         <div className = "contact">
         <div class = "contact-form">
-            <h1>Hello!</h1>
+            <h1>Say Hello!</h1>
             <form onSubmit={handleOnSubmit}>
                 <label htmlFor="name">Hi, my name is
                 <input id="text" type="text" name="name" required/>.
@@ -110,7 +110,7 @@ function Contact() {
                 </label>
                 <label htmlFor="email">You can respond to my email at
                 <input id="email" type="email" name="email" required />
-                .</label>
+                </label>
                 <label htmlFor="message">
                 <textarea id="message" name="message" cols="45" rows="15" ></textarea>
                 </label>
