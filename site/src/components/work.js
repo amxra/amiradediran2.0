@@ -17,7 +17,6 @@ const StyledContainer = styled.div`
     height: 100%;
     display: flex;
     align-items: center;
-    border: 1px solid blue;
     margin-top: 2.5rem;
 
     @media only screen and (max-width: 800px){
@@ -33,7 +32,6 @@ const StyledContainer = styled.div`
         grid-template-rows: 30% 30% 30%;
         grid-column-gap: 10px;
         grid-row-gap: 10px;
-        border: 1px solid red;
 
         @media only screen and (max-width: 800px){
             grid-template-columns: 100%;
