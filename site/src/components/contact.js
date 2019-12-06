@@ -30,7 +30,10 @@ import MobileNav from './mobilenav';
          padding: 2rem;
 
          @media only screen and (max-width: 800px){
-          border: none;
+           border: none;
+          height:auto;
+          padding: 0;
+          margin-top: 3rem;
         }
 
          h1{
@@ -42,6 +45,11 @@ import MobileNav from './mobilenav';
          margin-top: 3rem;
          padding: 0 5rem;
          text-align: left;
+
+         @media only screen and (max-width: 800px){
+          height:auto;
+          padding: 0;
+        }
      }
 
      button{
@@ -50,6 +58,13 @@ import MobileNav from './mobilenav';
          margin-top: 1rem;
          margin-left: 350px;
          border: 1px solid #FF6961;
+
+         @media only screen and (max-width: 800px){
+          border: none;
+          padding: 1rem 3rem;
+          margin-left: 50px;
+          width: 60%;
+       }
      }
     
      input[type="text"],
@@ -59,6 +74,7 @@ import MobileNav from './mobilenav';
          border: 1px solid #FF6961;
          color: #606060;
          padding: 0 2rem;
+
      }
 
      textarea{
@@ -73,6 +89,13 @@ import MobileNav from './mobilenav';
 
      label{
          display:block;
+     }
+
+     @media only screen and (max-width: 800px){
+
+       textarea{
+        padding: 0;
+    }
      }
  `
 
@@ -133,7 +156,7 @@ function Contact() {
                     </HideNav>
                 </header>
         <StyledContainer>
-        <div className = "contact">
+        
         <div class = "contact-form">
             <h1>Say Hello!</h1>
             <form onSubmit={handleOnSubmit}>
@@ -158,8 +181,8 @@ function Contact() {
                 </p>
                 )}
             </form>
+      
       </div>
-    </div>
       </StyledContainer>
     </div>
   );

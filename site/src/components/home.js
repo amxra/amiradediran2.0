@@ -22,10 +22,6 @@ const Container = styled.div`
       align-items: center;
       font-size: 10vw;
       letter-spacing: 1rem;
-
-      @media only screen and (max-width:800px){
-        height: 85%;
-      }
     }
 
   
