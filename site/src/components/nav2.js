@@ -7,6 +7,9 @@ const StyledHeader = styled.div`
     box-sizing: border-box;
     width: 100%;
     text-align: right;
+    background-image: radial-gradient(grey 20%, rgba(0,0,0,0) 20%);
+        background-position: 0 0;
+         background-size: 5px 5px;
 
     .navigationTwo{
         width: 100%;

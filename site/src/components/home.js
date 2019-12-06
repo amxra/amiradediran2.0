@@ -12,30 +12,19 @@ const Container = styled.div`
 
     .sitename{
       box-sizing: border-box;
-      height: 90vh;
+      height: 91.3%
       display:flex;
       justify-content: center;
       align-items: center;
       font-size: 10vw;
       letter-spacing: 1rem;
-    }
 
-    .nav{
-      box-sizing: border-box;
-      width: 100%;
-      padding: 1.5rem;
-      text-align: right;
-
-      a{
-        padding: 1rem;
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
-      }
-      a:hover{
-        color: #FF6961;
+      @media only screen and (max-width:800px){
+        height: 87.3%;
       }
     }
+
+  
 `
 
 

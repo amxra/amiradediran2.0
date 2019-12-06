@@ -2,7 +2,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import styled from 'styled-components';
-import NavTwo from './nav2'
+import NavTwo from './nav2';
+import MobileNav from './mobilenav';
 
  const StyledContainer = styled.div`
      box-sizing: border-box;
@@ -12,6 +13,11 @@ import NavTwo from './nav2'
      justify-content: center;
      align-items: center;
 
+     @media only screen and (max-width: 800px){
+       margin-top: 7.3rem;
+       height: 85.5vh;
+     }
+
      .contact-form{
 
          box-sizing: border-box;
@@ -20,6 +26,10 @@ import NavTwo from './nav2'
          height: 70%;
          border-radius: 19px;
          padding: 2rem;
+
+         @media only screen and (max-width: 800px){
+          border: none;
+        }
 
          h1{
              color: #686868;
@@ -64,6 +74,20 @@ import NavTwo from './nav2'
      }
  `
 
+ const HideNav = styled.div`
+    @media only screen and (max-width:800px){
+        .largenav{
+            display: none;
+        }
+    }
+
+    @media only screen and (min-width:799px){
+        .smallnav{
+            display: none;
+        }
+    }
+`
+
 function Contact() {
   const [serverState, setServerState] = useState({
     submitting: false,
@@ -96,7 +120,16 @@ function Contact() {
   };
   return (
     <div className = "contact-container">
-        <NavTwo/>
+        <header>
+                    <HideNav>
+                        <div className = 'largenav'>
+                            <NavTwo/>
+                        </div>
+                        <div className = 'smallnav'>
+                            <MobileNav/>
+                        </div>
+                    </HideNav>
+                </header>
         <StyledContainer>
         <div className = "contact">
         <div class = "contact-form">
