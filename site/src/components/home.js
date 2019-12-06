@@ -5,14 +5,20 @@ import Navigation from './nav';
 
 const Container = styled.div`
     box-sizing: border-box;
+    border: 1px solid red;
     width:100%;
     height: 100vh;
     background-color: black;
     color: white;
 
-    .sitename{
+    .nav{
       box-sizing: border-box;
-      height: 91.3%
+    }
+
+    .sitename{
+      border: 1px solid blue;
+      box-sizing: border-box;
+      height: 80%;
       display:flex;
       justify-content: center;
       align-items: center;
@@ -20,7 +26,7 @@ const Container = styled.div`
       letter-spacing: 1rem;
 
       @media only screen and (max-width:800px){
-        height: 87.3%;
+        height: 85%;
       }
     }
 
