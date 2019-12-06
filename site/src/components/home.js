@@ -5,7 +5,6 @@ import Navigation from './nav';
 
 const Container = styled.div`
     box-sizing: border-box;
-    border: 1px solid red;
     width:100%;
     height: 100vh;
     background-color: black;
@@ -16,7 +15,6 @@ const Container = styled.div`
     }
 
     .sitename{
-      border: 1px solid blue;
       box-sizing: border-box;
       height: 80%;
       display:flex;

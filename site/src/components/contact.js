@@ -16,6 +16,8 @@ import MobileNav from './mobilenav';
      @media only screen and (max-width: 800px){
        margin-top: 7.3rem;
        height: 85.5vh;
+       width: 80vw;
+       margin: 5rem auto;
      }
 
      .contact-form{
