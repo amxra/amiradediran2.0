@@ -175,7 +175,7 @@ class MobileNav extends React.Component {
           position: 'absolute',
           top: 0,
           left: 0,
-          height: this.state.open? '100%': 0,
+          height: this.state.open? '100vh': 0,
           width: '100vw',
           display: 'flex',
           flexDirection: 'column',
