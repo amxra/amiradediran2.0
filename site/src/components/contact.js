@@ -24,8 +24,8 @@ import MobileNav from './mobilenav';
 
          box-sizing: border-box;
          border: 1px solid #FF6961;
-         width: 100%;
-         height: 70%;
+         width: 60%;
+         height: 80%;
          border-radius: 19px;
          padding: 2rem;
 
