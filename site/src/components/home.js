@@ -10,18 +10,18 @@ const Container = styled.div`
     background-color: black;
     color: white;
 
+    .nav{
+      box-sizing: border-box;
+    }
+
     .sitename{
       box-sizing: border-box;
-      height: 91.3%
+      height: 80%;
       display:flex;
       justify-content: center;
       align-items: center;
       font-size: 10vw;
       letter-spacing: 1rem;
-
-      @media only screen and (max-width:800px){
-        height: 87.3%;
-      }
     }
 
   

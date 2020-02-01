@@ -122,7 +122,7 @@ class Work extends React.Component{
                             <a target = 'blank'href = "https://amiradediran.com"><img src ={amiradediran2} alt = 'site'/></a>
                         </div>
                         <div className = 'box-text'>
-                            <p>This is the current version of my website</p>
+                            <p>This is the current version of my website which i designed and built</p>
                         </div>
                         <div className = 'box-stack'>
                             <ul className = "stack">
@@ -138,7 +138,7 @@ class Work extends React.Component{
                             <a target = 'blank'href = "https://therestaurantpassport.netlify.com"><img src ={restaurantpassport} alt = 'site'/></a>
                         </div>
                         <div className = 'box-text'>
-                            <p>This is a multipage UI assigment designed </p>
+                            <p>This is a multipage UI assigment designed which i designed and built </p>
                         </div>
                         <div className = 'box-stack'>
                             <ul className = "stack">
